@@ -90,3 +90,6 @@ await pool.query(
 await pool.query(
   'CREATE TABLE IF NOT EXISTS table_2021 (id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, firstname TEXT, surname TEXT, dob TEXT, club TEXT, league TEXT, img TEXT, appearances INT, goals INT, gpa DECIMAL)'
 );
+await pool.query(
+  'CREATE TABLE IF NOT EXISTS topscorers(id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, firstname TEXT, surname TEXT, dob TEXT, club TEXT, season INT, league TEXT, img TEXT, appearances INT, goals INT, gpa DECIMAL)'
+);

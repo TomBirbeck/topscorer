@@ -41,7 +41,7 @@ describe('tesing player models', () => {
 
     const expected = {
       success: true,
-      data: [
+      payload: [
         {
           firstName: expect.any(String),
           surName: expect.any(String),
@@ -65,7 +65,7 @@ describe('tesing player models', () => {
 
     const expected = {
       success: true,
-      data: [
+      payload: [
         {
           firstName: expect.any(String),
           surName: expect.any(String),
@@ -83,6 +83,4 @@ describe('tesing player models', () => {
 
     expect(actual).resolves.toStrictEqual(expected);
   });
-
-
 });

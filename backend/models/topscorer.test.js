@@ -1,7 +1,12 @@
 // import request from 'supertest';
 // import app from '../app';
 import { test, expect } from '@jest/globals';
-import { getTopScorerByYear, getTopScorerByLeagueAndYear } from './players.js';
+import {
+  getTopScorerByYear,
+  getTopScorerByLeagueAndYear,
+  getTopScorerByName,
+  getTopScorerByLeague,
+} from './topscorer.js';
 
 describe('tesing player models', () => {
   //   test('when getPlayers function is called, all players are returned', () => {
@@ -48,7 +53,7 @@ describe('tesing player models', () => {
           dob: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
-          season: '1992',
+          season: 1992,
           league: expect.any(String),
           appearances: expect.any(Number),
           goals: expect.any(Number),
@@ -74,6 +79,54 @@ describe('tesing player models', () => {
           imgURL: expect.any(String),
           season: 1993,
           league: 'Ligue 1',
+          appearances: expect.any(Number),
+          goals: expect.any(Number),
+          GPG: expect.any(Number),
+        },
+      ],
+    };
+
+    expect(actual).resolves.toStrictEqual(expected);
+  });
+
+  test('when getTopScorerByByName function is called, returns all players with that surname', () => {
+    const actual = getTopScorerByName('simons');
+
+    const expected = {
+      success: true,
+      payload: [
+        {
+          firstName: expect.any(String),
+          surName: 'simons',
+          dob: expect.any(String),
+          club: expect.any(String),
+          imgURL: expect.any(String),
+          season: expect.any(Number),
+          league: expect.any(String),
+          appearances: expect.any(Number),
+          goals: expect.any(Number),
+          GPG: expect.any(Number),
+        },
+      ],
+    };
+
+    expect(actual).resolves.toStrictEqual(expected);
+  });
+
+  test('when getTopScorerByLeague function is called, returns all players from that league', () => {
+    const actual = getTopScorerByLeague('EPL');
+
+    const expected = {
+      success: true,
+      payload: [
+        {
+          firstName: expect.any(String),
+          surName: expect.any(String),
+          dob: expect.any(String),
+          club: expect.any(String),
+          imgURL: expect.any(String),
+          season: expect.any(Number),
+          league: 'EPL',
           appearances: expect.any(Number),
           goals: expect.any(Number),
           GPG: expect.any(Number),

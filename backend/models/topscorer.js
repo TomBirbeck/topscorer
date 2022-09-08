@@ -28,5 +28,12 @@ export async function getTopScorerByLeagueAndYear(year, league) {
   return res.rows;
 }
 
+export async function getTopScorerByLeague(league) {
+  const res = await pool.query('SELECT * FROM topscorers WHERE league = $1;', [
+    league,
+  ]);
+  return res.rows;
+}
+
 //SELECT table_name FROM information_schema.tables
 // WHERE table_schema = 'your_database_name';

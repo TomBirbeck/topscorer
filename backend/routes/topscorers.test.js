@@ -80,4 +80,30 @@ describe('route tests', () => {
       expect(response.body).toMatchObject(expectedBody);
     });
   });
+
+  test('get players by league working', async () => {
+    await request(app).get('/topscorer/league/epl', (req, res) => {
+      const expectedBody = {
+        success: true,
+        payload: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(Number),
+            firstName: expect.any(String),
+            surName: expect.any(String),
+            dob: expect.any(String),
+            club: expect.any(String),
+            imgURL: expect.any(String),
+            season: expect.any(Number),
+            league: 'epl',
+            appearances: expect.any(Number),
+            goals: expect.any(Number),
+            GPG: expect.any(Number),
+          }),
+        ]),
+      };
+      expect(response.statusCode).toBe(200);
+      expect(response.headers['content-type']).toMatch(/json/);
+      expect(response.body).toMatchObject(expectedBody);
+    });
+  });
 });

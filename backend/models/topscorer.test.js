@@ -1,11 +1,14 @@
 // import request from 'supertest';
 // import app from '../app';
 import { test, expect } from '@jest/globals';
+import app from '../app.js';
 import {
   getTopScorerByYear,
   getTopScorerByLeagueAndYear,
   getTopScorerByName,
   getTopScorerByLeague,
+  createNewPlayer,
+  updatePlayer,
 } from './topscorer.js';
 
 describe('tesing player models', () => {
@@ -136,4 +139,62 @@ describe('tesing player models', () => {
 
     expect(actual).resolves.toStrictEqual(expected);
   });
+
+  test('creates new player profile', async () => {
+    const player = {
+      firstName: 'Steve',
+      surName: 'Bishop',
+      dob: '13/09/1983',
+      club: 'Chelsea',
+      imgURL: 'www.google.com',
+      season: 1994,
+      league: 'EPL',
+      appearances: 30,
+      goals: 15,
+      GPG: 0.5,
+    };
+
+    const actual = createNewPlayer(player);
+
+    const expected = {
+      firstName: 'Steve',
+      surName: 'Bishop',
+      dob: '13/09/1983',
+      club: 'Chelsea',
+      imgURL: 'www.google.com',
+      season: 1994,
+      league: 'EPL',
+      appearances: 30,
+      goals: 15,
+      GPG: 0.5,
+    };
+
+    expect(actual).resolves.toStrictEqual(expected);
+
+  })
+
+  test('when updatePlayer function is called with an id and value, the correct player is updated in the db', async () => {
+    const id = 2;
+    const player = { season: 1997 };
+
+    const actual = updatePlayer(id, player);
+
+    const expected = {
+      id: 2,
+      firstName: expect.any(String),
+          surName: expect.any(String),
+          dob: expect.any(String),
+          club: expect.any(String),
+          imgURL: expect.any(String),
+          season: 1997,
+          league: expect.any(String),
+          appearances: expect.any(Number),
+          goals: expect.any(Number),
+          GPG: expect.any(Number),
+    };
+
+    expect(actual).resolves.toStrictEqual(expected);
+
+  });
 });
+

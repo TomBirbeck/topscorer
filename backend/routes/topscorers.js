@@ -5,6 +5,7 @@ import {
   getTopScorerByYear,
   getTopScorerByName,
   getTopScorerByLeague,
+  updatePlayer,
 } from '../models/topscorer.js';
 
 router.get('/', async function (req, res, next) {
@@ -25,7 +26,6 @@ router.get('/league/:league', async function (req, res, next) {
   next();
   return res.json({ success: true, payload: data });
 });
-export default router;
 router.get('/:year', async function (req, res, next) {
   const year = Number(req.params.year);
   const data = await getTopScorerByYear(year);
@@ -40,3 +40,13 @@ router.get('/:year/:league', async function (req, res, next) {
   next();
   return res.json({ success: true, payload: data });
 });
+
+router.patch('/:id', async function(req, res, next) {
+  const id = Number(req.params.id);
+  const update = req.body;
+  const data = await updatePlayer(id, update);
+  next()
+  return res.json({success: true, payload: data})
+})
+
+export default router;

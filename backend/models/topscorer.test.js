@@ -175,9 +175,9 @@ describe('tesing player models', () => {
 
   test('when updatePlayer function is called with an id and value, the correct player is updated in the db', async () => {
     const id = 2;
-    const player = { season: 1997 };
+    const update = { season: 1997 };
 
-    const actual = updatePlayer(id, player);
+    const actual = updatePlayer(id, update);
 
     const expected = {
       id: 2,

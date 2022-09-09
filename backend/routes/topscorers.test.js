@@ -106,4 +106,29 @@ describe('route tests', () => {
       expect(response.body).toMatchObject(expectedBody);
     });
   });
+  test('update by league working', async () => {
+    await request(app).patch('/topscorer/2', (req, res) => {
+      const expectedBody = {
+        success: true,
+        payload: expect.arrayContaining([
+          expect.objectContaining({
+            id: 2,
+            firstName: expect.any(String),
+            surName: expect.any(String),
+            dob: expect.any(String),
+            club: expect.any(String),
+            imgURL: expect.any(String),
+            season: expect.any(Number),
+            league: expect.any(String),
+            appearances: expect.any(Number),
+            goals: expect.any(Number),
+            GPG: expect.any(Number),
+          }),
+        ]),
+      };
+      expect(response.statusCode).toBe(200);
+      expect(response.headers['content-type']).toMatch(/json/);
+      expect(response.body).toMatchObject(expectedBody);
+    });
+  });
 });

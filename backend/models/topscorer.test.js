@@ -9,6 +9,7 @@ import {
   getTopScorerByLeague,
   createNewPlayer,
   updatePlayer,
+  deletePlayer,
 } from './topscorer.js';
 
 describe('tesing player models', () => {
@@ -196,5 +197,19 @@ describe('tesing player models', () => {
     expect(actual).resolves.toStrictEqual(expected);
 
   });
+
+  test('when deleteplayer function is called with an certain id, that data-set is removed from the db', async () => {
+    const id = 1
+
+    const actual = deletePlayer(id)
+
+    const expected = {
+      message: `player with id: ${id} has been deleted`
+    }
+
+    expect(actual).resolves.toStrictEqual(expected);
+
+  });
+
 });
 

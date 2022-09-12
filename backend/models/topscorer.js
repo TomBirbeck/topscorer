@@ -44,11 +44,11 @@ export async function createNewPlayer(player) {
 }
 
 export async function updatePlayer(id, update) {
-  // console.log("player",Object.keys(update))
+  console.log("player",Object.keys(update))
   let key = Object.keys(update)
-  // console.log("key", key)
+  console.log("key", key)
   let value = Object.values(update)
-  // console.log("value", value)
+  console.log("value", value)
   const res = await pool.query('UPDATE topscorers SET 1$ = $2 WHERE id = $3 RETURNING *;',[key, value, id] );
   return res.rows;
 }

@@ -3,8 +3,8 @@ import app from '../app';
 import { test, expect } from '@jest/globals';
 
 describe('route tests', () => {
-  test('app working', async () => {
-    await request(app).get('/topscorer/1993', (req, res) => {
+  test('get player by year', async () => {
+    await request(app).get('/topscorer/year/1993', (req, res) => {
       const expectedBody = {
         success: true,
         payload: expect.arrayContaining([
@@ -30,7 +30,7 @@ describe('route tests', () => {
   });
 
   test('get top scorer by year and league working', async () => {
-    await request(app).get('/topscorer/1992/Ligue 1', (req, res) => {
+    await request(app).get('/topscorer/year/1992/Ligue 1', (req, res) => {
       const expectedBody = {
         success: true,
         payload: expect.arrayContaining([
@@ -106,7 +106,7 @@ describe('route tests', () => {
       expect(response.body).toMatchObject(expectedBody);
     });
   });
-  test('update by league working', async () => {
+  test.only('update by id working', async () => {
     await request(app).patch('/topscorer/2', (req, res) => {
       const expectedBody = {
         success: true,

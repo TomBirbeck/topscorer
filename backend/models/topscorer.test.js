@@ -46,7 +46,7 @@ describe('tesing player models', () => {
   //   });
 
   test('when getTopScorerByYear function is called, returns all players from that season', () => {
-    const actual = getTopScorerByYear(1992);
+    const actual = getTopScorerByYear(1993);
 
     const expected = {
       success: true,
@@ -55,9 +55,10 @@ describe('tesing player models', () => {
           firstName: expect.any(String),
           surName: expect.any(String),
           dob: expect.any(String),
+          nationality: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
-          season: 1992,
+          season: 1993,
           league: expect.any(String),
           appearances: expect.any(Number),
           goals: expect.any(Number),
@@ -79,6 +80,7 @@ describe('tesing player models', () => {
           firstName: expect.any(String),
           surName: expect.any(String),
           dob: expect.any(String),
+          nationality: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
           season: 1993,
@@ -103,6 +105,7 @@ describe('tesing player models', () => {
           firstName: expect.any(String),
           surName: 'simons',
           dob: expect.any(String),
+          nationality: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
           season: expect.any(Number),
@@ -127,6 +130,7 @@ describe('tesing player models', () => {
           firstName: expect.any(String),
           surName: expect.any(String),
           dob: expect.any(String),
+          nationality: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
           season: expect.any(Number),
@@ -146,6 +150,7 @@ describe('tesing player models', () => {
       firstName: 'Steve',
       surName: 'Bishop',
       dob: '13/09/1983',
+      nationality: 'English',
       club: 'Chelsea',
       imgURL: 'www.google.com',
       season: 1994,
@@ -161,6 +166,7 @@ describe('tesing player models', () => {
       firstName: 'Steve',
       surName: 'Bishop',
       dob: '13/09/1983',
+      nationality: 'English',
       club: 'Chelsea',
       imgURL: 'www.google.com',
       season: 1994,
@@ -185,6 +191,7 @@ describe('tesing player models', () => {
       firstName: expect.any(String),
           surName: expect.any(String),
           dob: expect.any(String),
+          nationality: expect.any(String),
           club: expect.any(String),
           imgURL: expect.any(String),
           season: 1997,

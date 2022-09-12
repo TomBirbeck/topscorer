@@ -65,3 +65,5 @@ const players = [
         gpa: 0.3   
     },
 ]
+
+export default players;

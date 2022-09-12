@@ -26,14 +26,14 @@ router.get('/league/:league', async function (req, res, next) {
   next();
   return res.json({ success: true, payload: data });
 });
-router.get('/:year', async function (req, res, next) {
+router.get('/year/:year', async function (req, res, next) {
   const year = Number(req.params.year);
   const data = await getTopScorerByYear(year);
   next();
   return res.json({ success: true, payload: data });
 });
 
-router.get('/:year/:league', async function (req, res, next) {
+router.get('/year/:year/:league', async function (req, res, next) {
   const year = Number(req.params.year);
   const league = String(req.params.league);
   const data = await getTopScorerByLeagueAndYear(year, league);

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "nodemon --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "nodemon --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
     "create": "node ./db/scripts/create.js",
     "delete": "node ./db/scripts/delete.js",
     "populate": "node ./db/scripts/populate.js"

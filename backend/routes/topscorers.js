@@ -12,6 +12,14 @@ router.get('/', async function (req, res, next) {
   next();
   return res.json({ success: true, message: 'Page not used' });
 });
+
+router.patch('/id/:id', async function (req, res, next) {
+  const id = Number(req.params.id);
+  const update = req.body;
+  const data = await updatePlayer(id, update);
+  next();
+  return res.json({ success: true, payload: data });
+});
 router.get('/surname/:surname', async function (req, res, next) {
   const name = req.params.surname;
   const data = await getTopScorerByName(name);
@@ -41,12 +49,20 @@ router.get('/year/:year/:league', async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
-router.patch('/:id', async function(req, res, next) {
-  const id = Number(req.params.id);
-  const update = req.body;
-  const data = await updatePlayer(id, update);
-  next()
-  return res.json({success: true, payload: data})
-})
+// router.patch('/id/:id', async function (req, res, next) {
+//   const id = Number(req.params.id);
+//   const update = req.body;
+//   const data = await updatePlayer(id, update);
+//   next();
+//   return res.json({ success: true, payload: data });
+// });
+
+// router.delete('/id/:id', async function (req, res, next) {
+//   const id = Number(req.params.id);
+//   const update = req.body;
+//   const data = await updatePlayer(id, update);
+//   next();
+//   return res.json({ success: true, payload: data });
+// });
 
 export default router;

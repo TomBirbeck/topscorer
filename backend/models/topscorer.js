@@ -22,7 +22,7 @@ export async function getTopScorerByYear(year) {
 }
 
 export async function getTopScorerByLeagueAndYear(year, league) {
-  const leagueName = year.toLowerCase()
+  const leagueName = league.toLowerCase()
   const res = await pool.query(
     'SELECT * FROM topscorers WHERE season = $1 AND league = $2;',
     [year, leagueName]

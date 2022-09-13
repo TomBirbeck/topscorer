@@ -14,7 +14,7 @@ await pool.query('INSERT INTO topscorers (firstname, surname, dob, nationality, 
     players[i].img,
     players[i].appearances,
     players[i].goals,
-    players[i].gpa
+    (players[i].goals / players[i].appearances)
 ])
     }
 }

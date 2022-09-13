@@ -119,6 +119,7 @@ describe('route tests', () => {
               firstname: 'Barry',
               surname: expect.any(String),
               dob: expect.any(String),
+              nationality: expect.any(String),
               club: expect.any(String),
               img: expect.any(String),
               season: expect.any(Number),
@@ -164,33 +165,33 @@ describe('route tests', () => {
   //       expect(res.body).toMatchObject(expectedBody);
   //     };
   // });
-  // test('update by id working', async () => {
-  //   await request(app).patch('/topscorer/id/10').send({
-  //     club: 'Barca',
-  //   }),
-  //     (req, res) => {
-  //       const expectedBody = {
-  //         success: true,
-  //         payload: expect.arrayContaining([
-  //           expect.objectContaining({
-  //             id: 10,
-  //             firstname: expect.any(String),
-  //             surname: expect.any(String),
-  //             dob: expect.any(String),
-  //             club: 'Barca',
-  //             img: expect.any(String),
-  //             season: expect.any(Number),
-  //             league: expect.any(String),
-  //             appearances: expect.any(Number),
-  //             goals: expect.any(Number),
-  //             gpg: expect.any(Number),
-  //           }),
-  //         ]),
-  //       };
+   test('update by id working', async () => {
+     await request(app).patch('/topscorer/id/10').send({
+       club: 'Barca',
+     }),
+  (req, res) => {
+         const expectedBody = {
+           success: true,
+           payload: expect.arrayContaining([
+             expect.objectContaining({
+              id: 10,
+              firstname: expect.any(String),
+               surname: expect.any(String),
+               dob: expect.any(String),
+              club: 'Barca',
+              img: expect.any(String),
+              season: expect.any(Number),
+              league: expect.any(String),
+              appearances: expect.any(Number),
+               goals: expect.any(Number),
+               gpg: expect.any(Number),
+           }),
+           ]),
+         };
 
-  //       expect(res.statusCode).toBe(200);
-  //       expect(res.headers['content-type']).toMatch(/json/);
-  //       expect(res.body).toMatchObject(expectedBody);
-  //     };
-  // });
+         expect(res.statusCode).toBe(200);
+         expect(res.headers['content-type']).toMatch(/json/);
+         expect(res.body).toMatchObject(expectedBody);
+       };
+   });
 });

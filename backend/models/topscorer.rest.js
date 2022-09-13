@@ -49,7 +49,7 @@ describe('tesing player models', () => {
           club: expect.any(String),
           img: expect.any(String),
           season: 1996,
-          league: 'Ligue 1',
+          league: 'ligue 1',
           appearances: expect.any(Number),
           goals: expect.any(Number),
           gpa: expect.any(String),
@@ -95,7 +95,7 @@ describe('tesing player models', () => {
           club: expect.any(String),
           img: expect.any(String),
           season: expect.any(Number),
-          league: 'EPL',
+          league: 'epl',
           appearances: expect.any(Number),
           goals: expect.any(Number),
           gpa: expect.any(String),
@@ -118,9 +118,10 @@ describe('tesing player models', () => {
       goals: 15,
       gpa: 0.5,
     };
-    const actual = await createNewPlayer(player);
+    const actual = createNewPlayer(player);
     const expected = [
       {
+        id: expect.any(Number),
         firstname: 'Steve',
         surname: 'Bishop',
         dob: '13/09/1983',
@@ -128,10 +129,10 @@ describe('tesing player models', () => {
         club: 'Chelsea',
         img: 'www.google.com',
         season: 1994,
-        league: 'EPL',
+        league: 'epl',
         appearances: 30,
         goals: 15,
-        gpa: 0.5,
+        gpa: "0.5",
       },
     ];
     expect(actual).resolves.toStrictEqual(expected);
@@ -159,10 +160,10 @@ describe('tesing player models', () => {
     expect(actual).toStrictEqual(expected);
   });
   test('when deleteplayer function is called with an certain id, that data-set is removed from the db', async () => {
-    const id = 1;
+    const id = 5;
     const actual = deletePlayer(id);
     const expected = {
-      message: `player with id: ${id} has been deleted`,
+      message: `topscorer entry with id: ${id} has been deleted`,
     };
     expect(actual).resolves.toStrictEqual(expected);
   });

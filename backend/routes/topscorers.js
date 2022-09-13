@@ -6,6 +6,7 @@ import {
   getTopScorerByName,
   getTopScorerByLeague,
   updatePlayer,
+  deletePlayer,
 } from '../models/topscorer.js';
 
 router.get('/', async function (req, res, next) {
@@ -49,20 +50,12 @@ router.get('/year/:year/:league', async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
-// router.patch('/id/:id', async function (req, res, next) {
-//   const id = Number(req.params.id);
-//   const update = req.body;
-//   const data = await updatePlayer(id, update);
-//   next();
-//   return res.json({ success: true, payload: data });
-// });
-
-// router.delete('/id/:id', async function (req, res, next) {
-//   const id = Number(req.params.id);
-//   const update = req.body;
-//   const data = await updatePlayer(id, update);
-//   next();
-//   return res.json({ success: true, payload: data });
-// });
+router.delete('/delete/:id', async function (req, res, next) {
+  const id = Number(req.params.id);
+  console.log("route req", req)
+  const data = await deletePlayer(id);
+  next();
+  return res.json({ success: true, payload: data });
+});
 
 export default router;

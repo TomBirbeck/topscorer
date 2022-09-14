@@ -1912,7 +1912,290 @@ goals:16 ,
 //2004
 //epl                                        
 
-                                
+{
+    firstname: 'Thierry',
+    surname: 'Henry',
+    dob: '17-08-1977',
+    nationality: 'French',
+    club: 'Arsenal',
+    season: 2004,
+    league: 'epl',
+    img: '',
+    appearances:32,
+    goals: 25,
+    // gpa:
+    },
+    {
+        firstname: 'Andrew',
+        surname: 'Johnson',
+        dob: '10-02-1981',
+        nationality: 'English',
+        club: 'Crystal Palace',
+        season: 2004,
+        league: 'epl',
+        img: '',
+        appearances:37,
+        goals: 21,
+        // gpa:
+        },
+        {
+            firstname: 'Robert',
+            surname: 'Pires',
+            dob: '29-10-1973',
+            nationality: 'French',
+            club: 'Arsenal',
+            season: 2004,
+            league: 'epl',
+            img: '',
+            appearances:33,
+            goals: 14,
+            // gpa:
+            },
+            {
+                firstname: 'Frank',
+                surname: 'Lampard',
+                dob: '20-06-1978',
+                nationality: 'English',
+                club: 'Chelsea',
+                season: 2004,
+                league: 'epl',
+                img: '',
+                appearances:38,
+                goals: 13,
+                // gpa:
+                },
+            {
+                firstname: 'Jermaine',
+                surname: 'Defoe',
+                dob: '07-10-1982',
+                nationality: 'English',
+                club: 'Tottenham Hotspurs',
+                season: 2004,
+                league: 'epl',
+                img: '',
+                appearances:35,
+                goals: 13,
+                // gpa:
+                },
+                {
+                    firstname: 'Jimmy Floyd',
+                    surname: 'Hasselbaink',
+                    dob: '27-03-1972',
+                    nationality: 'Dutch',
+                    club: 'Middlesbrough',
+                    season: 2004,
+                    league: 'epl',
+                    img: '',
+                    appearances:36 ,
+                    goals: 13,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Yakubu',
+                        surname: 'Ayegbeni',
+                        dob: '22-11-1982',
+                        nationality: 'Nigerian',
+                        club: 'Portsmouth',
+                        season: 2004,
+                        league: 'epl',
+                        img: '',
+                        appearances:30,
+                        goals: 13,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Andy',
+                            surname: 'Cole',
+                            dob: '15-10-1971',
+                            nationality: 'English',
+                            club: 'Fulham',
+                            season: 2004,
+                            league: 'epl',
+                            img: '',
+                            appearances:31,
+                            goals: 12,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Eidur',
+                                surname: 'Gudjohnson',
+                                dob: '15-09-1978',
+                                nationality: 'Icelandic',
+                                club: 'Chelsea',
+                                season: 2004,
+                                league: 'epl',
+                                img: '',
+                                appearances: 37,
+                                goals: 12,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Peter',
+                                    surname: 'Crouch',
+                                    dob: '30-01-1981',
+                                    nationality: 'English',
+                                    club: 'Southampton',
+                                    season: 2004,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances:27 ,
+                                    goals: 12,
+                                    // gpa:
+                                    },
+
+//2005
+//epl
+
+{
+    firstname: 'Thierry',
+    surname: 'Henry',
+    dob: '17-08-1977',
+    nationality: 'French',
+    club: 'Arsenal',
+    season: 2005,
+    league: 'epl',
+    img: '',
+    appearances:32,
+    goals: 27,
+    // gpa:
+    },
+    {
+        firstname: 'Ruud',
+        surname: 'Van Nistelrooy',
+        dob: '01-07-1976',
+        nationality: 'Dutch',
+        club: 'Manchester United',
+        season: 2005,
+        league: 'epl',
+        img: '',
+        appearances:35 ,
+        goals: 21,
+        // gpa:
+        },
+        {
+            firstname: 'Darren',
+            surname: 'Bent',
+            dob: '06-02-1984',
+            nationality: 'English',
+            club: 'Charlton Athletic',
+            season: 2005,
+            league: 'epl',
+            img: '',
+            appearances:36 ,
+            goals: 18,
+            // gpa:
+            },
+            {
+                firstname: 'Frank',
+                surname: 'Lampard',
+                dob: '20-06-1978',
+                nationality: 'English',
+                club: 'Chelsea',
+                season: 2005,
+                league: 'epl',
+                img: '',
+                appearances:35,
+                goals: 16,
+                // gpa:
+                },
+                {
+                    firstname: 'Robbie',
+                    surname: 'Keane',
+                    dob: '08-07-1980',
+                    nationality: 'Irish',
+                    club: 'Tottenham Hotspurs',
+                    season: 2005,
+                    league: 'epl',
+                    img: '',
+                    appearances:36,
+                    goals: 16,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Wayne',
+                        surname: 'Rooney',
+                        dob: '24-10-1985',
+                        nationality: 'English',
+                        club: 'Manchester United',
+                        season: 2005,
+                        league: 'epl',
+                        img: '',
+                        appearances:36,
+                        goals: 16,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Marlon',
+                            surname: 'Harewood',
+                            dob: '25-08-1979',
+                            nationality: 'English',
+                            club: 'West Ham United',
+                            season: 2005,
+                            league: 'epl',
+                            img: '',
+                            appearances:37,
+                            goals: 14,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Craig',
+                                surname: 'Bellamy',
+                                dob: '13-07-1979',
+                                nationality: 'Welsh',
+                                club: 'Blackburn Rovers',
+                                season: 2005,
+                                league: 'epl',
+                                img: '',
+                                appearances:27,
+                                goals: 13,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Yakubu',
+                                    surname: 'Ayegbeni',
+                                    dob: '22-11-1982',
+                                    nationality: 'Nigerian',
+                                    club: 'Middlesbrough',
+                                    season: 2005,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances:34,
+                                    goals: 13,
+                                    // gpa:
+                                    },
+                                    {
+                                        firstname: 'Didier',
+                                        surname: 'Drogba',
+                                        dob: '11-03-1978',
+                                        nationality: 'Ivorian',
+                                        club: 'Chelsea',
+                                        season: 2005,
+                                        league: 'epl',
+                                        img: '',
+                                        appearances:29,
+                                        goals: 12,
+                                        // gpa:
+                                        },
+                                        {
+                                            firstname: 'Henri',
+                                            surname: 'Camara',
+                                            dob: '10-05-1977',
+                                            nationality: 'Senegalese',
+                                            club: 'Wigan Athletic',
+                                            season: 2005,
+                                            league: 'epl',
+                                            img: '',
+                                            appearances:29,
+                                            goals: 12,
+                                            // gpa:
+                                            },
+
+
+//2006
+//epl
+
+
+
 
 
 

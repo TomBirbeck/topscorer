@@ -861,10 +861,408 @@ goals:16 ,
                                         // gpa:
                                         },
         
+//1997
+//epl
 
+{
+    firstname: 'Chris',
+    surname: 'Sutton',
+    dob: '10-03-1973',
+    nationality: 'English',
+    club: 'Blackburn Rovers',
+    season: 1997,
+    league: 'epl',
+    img: '',
+    appearances: 35,
+    goals: 18,
+    // gpa:
+    },
 
+    {
+        firstname: 'Dion',
+        surname: 'Dublin',
+        dob: '22-04-1969',
+        nationality: 'English',
+        club: 'Coventry City',
+        season: 1997,
+        league: 'epl',
+        img: '',
+        appearances:36 ,
+        goals: 18,
+        // gpa:
+        },
 
+        {
+            firstname: 'Michael',
+            surname: 'Owen',
+            dob: '14-12-1979',
+            nationality: 'English',
+            club: 'Liverpool',
+            season: 1997,
+            league: 'epl',
+            img: '',
+            appearances:36 ,
+            goals: 18,
+            // gpa:
+            },
 
+            {
+                firstname: 'Dennis',
+                surname: 'Bergkamp',
+                dob: '10-05-1969',
+                nationality: 'Dutch',
+                club: 'Arsenal',
+                season: 1997,
+                league: 'epl',
+                img: '',
+                appearances:28 ,
+                goals: 16,
+                // gpa:
+                },
+                {
+                    firstname: 'Jimmy Floyd',
+                    surname: 'Hasselbaink',
+                    dob: '27-03-1972',
+                    nationality: 'Dutch',
+                    club: 'Leeds United',
+                    season: 1997,
+                    league: 'epl',
+                    img: '',
+                    appearances:33 ,
+                    goals: 16,
+                    // gpa:
+                    },
+
+                    {
+                        firstname: 'Kevin',
+                        surname: 'Gallacher',
+                        dob: '23-11-1966',
+                        nationality: 'Scottish',
+                        club: 'Blackburn Rovers',
+                        season: 1997,
+                        league: 'epl',
+                        img: '',
+                        appearances:33 ,
+                        goals: 16,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'John',
+                            surname: 'Hartson',
+                            dob: '05-04-1975',
+                            nationality: 'Welsh',
+                            club: 'West Ham United',
+                            season: 1997,
+                            league: 'epl',
+                            img: '',
+                            appearances:32,
+                            goals: 15,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Darren',
+                                surname: 'Huckerby',
+                                dob: '23-04-1976',
+                                nationality: 'English',
+                                club: 'Coventry',
+                                season: 1997,
+                                league: 'epl',
+                                img: '',
+                                appearances:34,
+                                goals: 14,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Paolo',
+                                    surname: 'Wanchope',
+                                    dob: '31-07-1976',
+                                    nationality: 'Costa Rican',
+                                    club: 'Derby County',
+                                    season: 1997,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances:32,
+                                    goals: 13,
+                                    // gpa:
+                                    },
+
+//1998
+//epl
+{
+    firstname: 'Michael',
+    surname: 'Owen',
+    dob: '14-12-1979',
+    nationality: 'English',
+    club: 'Liverpool',
+    season: 1998,
+    league: 'epl',
+    img: '',
+    appearances:30 ,
+    goals: 18,
+    // gpa:
+    },
+
+{
+    firstname: 'Dwight',
+    surname: 'Yorke',
+    dob: '03-11-1971',
+    nationality: 'Trinidadian and Tobagonian',
+    club: 'Manchester United',
+    season: 1998,
+    league: 'epl',
+    img: '',
+    appearances:32,
+    goals: 18,
+    // gpa:
+    },
+
+    {
+        firstname: 'Jimmy Floyd',
+        surname: 'Hasselbaink',
+        dob: '27-03-1972',
+        nationality: 'Dutch',
+        club: 'Leeds United',
+        season: 1998,
+        league: 'epl',
+        img: '',
+        appearances:36 ,
+        goals: 18,
+        // gpa:
+        },
+    
+        {
+            firstname: 'Andy',
+            surname: 'Cole',
+            dob: '15-10-1971',
+            nationality: 'English',
+            club: 'Manchester United',
+            season: 1998,
+            league: 'epl',
+            img: '',
+            appearances:32,
+            goals: 17,
+            // gpa:
+            },
+
+            {
+                firstname: 'Nicolas',
+                surname: 'Anelka',
+                dob: '14-03-1979',
+                nationality: 'French',
+                club: 'Arsenal',
+                season: 1998,
+                league: 'epl',
+                img: '',
+                appearances:35,
+                goals: 17,
+                // gpa:
+                },
+
+                {
+                    firstname: 'Hamilton',
+                    surname: 'Ricard',
+                    dob: '12-01-1974',
+                    nationality: 'Colombian',
+                    club: 'Middlesbrough',
+                    season: 1998,
+                    league: 'epl',
+                    img: '',
+                    appearances:36,
+                    goals: 15,
+                    // gpa:
+                    },
+
+    {
+    firstname: 'Alan',
+    surname: 'Shearer',
+    dob: '13-08-1970',
+    nationality: 'English',
+    club: 'Newcastle United',
+    season: 1998,
+    league: 'epl',
+    img: '',
+    appearances: 30,
+    goals: 14,
+    // gpa:
+    },
+
+    {
+        firstname: 'Dion',
+        surname: 'Dublin',
+        dob: '22-04-1969',
+        nationality: 'English',
+        club: 'Coventry City and Aston Villa',
+        season: 1998,
+        league: 'epl',
+        img: '',
+        appearances:34 ,
+        goals: 14,
+        // gpa:
+        },
+
+        {
+            firstname: 'Julian',
+            surname: 'Joachim',
+            dob: '20-09-1974',
+            nationality: 'English',
+            club: 'Coventry City',
+            season: 1998,
+            league: 'epl',
+            img: '',
+            appearances:36 ,
+            goals: 14,
+            // gpa:
+            },
+
+            {
+                firstname: 'Robbie',
+                surname: 'Fowler',
+                dob: '09-02-1975',
+                nationality: 'English',
+                club: 'Liverpool',
+                season: 1998,
+                league: 'epl',
+                img: '',
+                appearances: 25,
+                goals: 14,
+                // gpa:
+                },
+
+//1999
+//epl
+
+{
+    firstname: 'Kevin',
+    surname: 'Phillips',
+    dob: '25-07-1973',
+    nationality: 'English',
+    club: 'Sunderland',
+    season: 1999,
+    league: 'epl',
+    img: '',
+    appearances: 36,
+    goals: 30,
+    // gpa:
+    },
+    {
+        firstname: 'Alan',
+        surname: 'Shearer',
+        dob: '13-08-1970',
+        nationality: 'English',
+        club: 'Newcastle United',
+        season: 1999,
+        league: 'epl',
+        img: '',
+        appearances: 37,
+        goals: 23,
+        // gpa:
+        },
+
+        {
+            firstname: 'Dwight',
+            surname: 'Yorke',
+            dob: '03-11-1971',
+            nationality: 'Trinidadian and Tobagonian',
+            club: 'Manchester United',
+            season: 1999,
+            league: 'epl',
+            img: '',
+            appearances:32,
+            goals: 20,
+            // gpa:
+            },
+
+            {
+                firstname: 'Andy',
+                surname: 'Cole',
+                dob: '15-10-1971',
+                nationality: 'English',
+                club: 'Manchester United',
+                season: 1999,
+                league: 'epl',
+                img: '',
+                appearances:28,
+                goals: 19,
+                // gpa:
+                },
+                {
+                    firstname: 'Micael',
+                    surname: 'Bridges',
+                    dob: '05-08-1978',
+                    nationality: 'English',
+                    club: 'Leeds United',
+                    season: 1999,
+                    league: 'epl',
+                    img: '',
+                    appearances:34,
+                    goals: 19,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Thierry',
+                        surname: 'Henry',
+                        dob: '17-08-1977',
+                        nationality: 'French',
+                        club: 'Arsenal',
+                        season: 1999,
+                        league: 'epl',
+                        img: '',
+                        appearances:31,
+                        goals: 17,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Paolo',
+                            surname: 'Di Canio',
+                            dob: '09-07-1968',
+                            nationality: 'Italian',
+                            club: 'West Ham United',
+                            season: 1999,
+                            league: 'epl',
+                            img: '',
+                            appearances:30,
+                            goals: 16,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Chris',
+                                surname: 'Armstrong',
+                                dob: '19-06-1971',
+                                nationality: 'English',
+                                club: 'Tottenham Hotspurs',
+                                season: 1999,
+                                league: 'epl',
+                                img: '',
+                                appearances:31 ,
+                                goals: 14,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Niall',
+                                    surname: 'Quinn',
+                                    dob: '06-10-1966',
+                                    nationality: 'Irish',
+                                    club: 'Sunderlnd',
+                                    season: 1999,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances:37 ,
+                                    goals: 14,
+                                    // gpa:
+                                    },
+                                    {
+                                        firstname: 'Stefan',
+                                        surname: 'Iversen',
+                                        dob: '10-11-1976',
+                                        nationality: 'Norwegian',
+                                        club: 'Tottenham Hotspurs',
+                                        season: 1999,
+                                        league: 'epl',
+                                        img: '',
+                                        appearances:36 ,
+                                        goals: 14,
+                                        // gpa:
+                                        },
 
 ]
 

@@ -1264,6 +1264,339 @@ goals:16 ,
                                         // gpa:
                                         },
 
+//2000
+//epl
+
+{
+    firstname: 'Jimmy Floyd',
+    surname: 'Hasselbaink',
+    dob: '27-03-1972',
+    nationality: 'Dutch',
+    club: 'Chelsea',
+    season: 2000,
+    league: 'epl',
+    img: '',
+    appearances:35 ,
+    goals: 23,
+    // gpa:
+    },
+
+    {
+        firstname: 'Marcus',
+        surname: 'Stewart',
+        dob: '07-11-1972',
+        nationality: 'English',
+        club: 'Ipswich Town',
+        season: 2000,
+        league: 'epl',
+        img: '',
+        appearances:34 ,
+        goals: 19,
+        // gpa:
+        },
+        {
+            firstname: 'Mark',
+            surname: 'Viduka',
+            dob: '09-10-1975',
+            nationality: 'Australian',
+            club: 'Leeds United',
+            season: 2000,
+            league: 'epl',
+            img: '',
+            appearances:34 ,
+            goals: 17,
+            // gpa:
+            },
+            {
+                firstname: 'Thierry',
+                surname: 'Henry',
+                dob: '17-08-1977',
+                nationality: 'French',
+                club: 'Arsenal',
+                season: 2000,
+                league: 'epl',
+                img: '',
+                appearances:35,
+                goals: 17,
+                // gpa:
+                },
+
+                {
+                    firstname: 'Michael',
+                    surname: 'Owen',
+                    dob: '14-12-1979',
+                    nationality: 'English',
+                    club: 'Liverpool',
+                    season: 2000,
+                    league: 'epl',
+                    img: '',
+                    appearances:28 ,
+                    goals: 16,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Teddy',
+                        surname: 'Sheringham',
+                        dob: '02-04-1966',
+                        nationality: 'English',
+                        club: 'Manchester United',
+                        season: 2000,
+                        league: 'epl',
+                        img: '',
+                        appearances:29 ,
+                        goals:15 ,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Emile',
+                            surname: 'Heskey',
+                            dob: '11-01-1978',
+                            nationality: 'English',
+                            club: 'Liverpool',
+                            season: 2000,
+                            league: 'epl',
+                            img: '',
+                            appearances:36 ,
+                            goals:14 ,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Kevin',
+                                surname: 'Phillips',
+                                dob: '25-07-1973',
+                                nationality: 'English',
+                                club: 'Sunderland',
+                                season: 2000,
+                                league: 'epl',
+                                img: '',
+                                appearances: 34,
+                                goals: 14,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Alen',
+                                    surname: 'Boksic',
+                                    dob: '21-01-1970',
+                                    nationality: 'Croatian',
+                                    club: 'Middlesbrough',
+                                    season: 2000,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances: 28,
+                                    goals: 12,
+                                    // gpa:
+                                    },
+                                    {
+                                        firstname: 'Alan',
+                                        surname: 'Smith',
+                                        dob: '28-10-1980',
+                                        nationality: 'English',
+                                        club: 'Leeds United',
+                                        season: 2000,
+                                        league: 'epl',
+                                        img: '',
+                                        appearances: 33,
+                                        goals: 11,
+                                        // gpa:
+                                        },
+                                        {
+                                            firstname: 'Frederic',
+                                            surname: 'Kanoute',
+                                            dob: '17-09-1977',
+                                            nationality: 'French / Malian',
+                                            club: 'West Ham United',
+                                            season: 2000,
+                                            league: 'epl',
+                                            img: '',
+                                            appearances: 32,
+                                            goals: 11,
+                                            // gpa:
+                                            },
+                                            {
+                                                firstname: 'Gustavo',
+                                                surname: 'Poyet',
+                                                dob: '15-11-1967',
+                                                nationality: 'Uruguayan',
+                                                club: 'Chelsea',
+                                                season: 2000,
+                                                league: 'epl',
+                                                img: '',
+                                                appearances: 30,
+                                                goals: 11,
+                                                // gpa:
+                                                },
+                                                {
+                                                    firstname: 'James',
+                                                    surname: 'Beattie',
+                                                    dob: '27-02-1978',
+                                                    nationality: 'English',
+                                                    club: 'Southampton',
+                                                    season: 2000,
+                                                    league: 'epl',
+                                                    img: '',
+                                                    appearances: 37,
+                                                    goals: 11,
+                                                    // gpa:
+                                                    },
+                                                {
+                                                    firstname: 'Jonaton',
+                                                    surname: 'Johansson',
+                                                    dob: '16-08-1975',
+                                                    nationality: 'Finnish',
+                                                    club: 'Charlton Athletic',
+                                                    season: 2000,
+                                                    league: 'epl',
+                                                    img: '',
+                                                    appearances: 31,
+                                                    goals: 11,
+                                                    // gpa:
+                                                    },
+
+//2001
+//epl
+
+{
+    firstname: 'Thierry',
+    surname: 'Henry',
+    dob: '17-08-1977',
+    nationality: 'French',
+    club: 'Arsenal',
+    season: 2001,
+    league: 'epl',
+    img: '',
+    appearances:33,
+    goals: 24,
+    // gpa:
+    },
+    {
+        firstname: 'Alan',
+        surname: 'Shearer',
+        dob: '13-08-1970',
+        nationality: 'English',
+        club: 'Newcastle United',
+        season: 2001,
+        league: 'epl',
+        img: '',
+        appearances: 37,
+        goals: 23,
+        // gpa:
+        },
+        {
+            firstname: 'Jimmy Floyd',
+            surname: 'Hasselbaink',
+            dob: '27-03-1972',
+            nationality: 'Dutch',
+            club: 'Chelsea',
+            season: 2001,
+            league: 'epl',
+            img: '',
+            appearances:35 ,
+            goals: 23,
+            // gpa:
+            },
+
+            {
+                firstname: 'Ruud',
+                surname: 'Van Nistelrooy',
+                dob: '01-07-1976',
+                nationality: 'Dutch',
+                club: 'Manchester United',
+                season: 2001,
+                league: 'epl',
+                img: '',
+                appearances:32 ,
+                goals: 23,
+                // gpa:
+                },
+
+{                    
+    firstname: 'Michael',
+    surname: 'Owen',
+    dob: '14-12-1979',
+    nationality: 'English',
+    club: 'Liverpool',
+    season: 2001,
+    league: 'epl',
+    img: '',
+    appearances:29 ,
+    goals: 19,
+    // gpa:
+    },
+    {
+        firstname: 'Ole Gunnar',
+        surname: 'Solskjær',
+        dob: '26-02-1973',
+        nationality: 'Norwegian',
+        club: 'Manchester United',
+        season: 2001,
+        league: 'epl',
+        img: '',
+        appearances:30 ,
+        goals: 17,
+        // gpa:
+        },
+        {
+            firstname: 'Robbie',
+            surname: 'Fowler',
+            dob: '09-02-1975',
+            nationality: 'English',
+            club: 'Liverpool and Leeds United',
+            season: 2001,
+            league: 'epl',
+            img: '',
+            appearances: 32,
+            goals: 15,
+            // gpa:
+            },
+        {
+            firstname: 'Eidur',
+            surname: 'Gudjohnson',
+            dob: '15-09-1978',
+            nationality: 'Icelandic',
+            club: 'Chelsea',
+            season: 2001,
+            league: 'epl',
+            img: '',
+            appearances:32 ,
+            goals: 14,
+            // gpa:
+            },
+            {
+                firstname: 'Marians',
+                surname: 'Pahars',
+                dob: '05-08-1976',
+                nationality: 'Latvian',
+                club: 'Southampton',
+                season: 2001,
+                league: 'epl',
+                img: '',
+                appearances:36 ,
+                goals: 14,
+                // gpa:
+                },
+                {
+                    firstname: 'Andy',
+                    surname: 'Cole',
+                    dob: '15-10-1971',
+                    nationality: 'English',
+                    club: 'Manchester United and Blackburn Rovers',
+                    season: 2001,
+                    league: 'epl',
+                    img: '',
+                    appearances:26,
+                    goals: 13,
+                    // gpa:
+                    },
+
+
+
+
+
+
+
+
+
+
 ]
 
 export default players;

@@ -1588,6 +1588,331 @@ goals:16 ,
                     // gpa:
                     },
 
+//2002
+//epl
+
+{
+    firstname: 'Ruud',
+    surname: 'Van Nistelrooy',
+    dob: '01-07-1976',
+    nationality: 'Dutch',
+    club: 'Manchester United',
+    season: 2002,
+    league: 'epl',
+    img: '',
+    appearances:34 ,
+    goals: 25,
+    // gpa:
+    },
+
+{
+    firstname: 'Thierry',
+    surname: 'Henry',
+    dob: '17-08-1977',
+    nationality: 'French',
+    club: 'Arsenal',
+    season: 2002,
+    league: 'epl',
+    img: '',
+    appearances:37,
+    goals: 24,
+    // gpa:
+    },
+    {
+        firstname: 'James',
+        surname: 'Beattie',
+        dob: '27-02-1978',
+        nationality: 'English',
+        club: 'Southampton',
+        season: 2002,
+        league: 'epl',
+        img: '',
+        appearances: 38,
+        goals: 23,
+        // gpa:
+        },
+        {
+            firstname: 'Mark',
+            surname: 'Viduka',
+            dob: '09-10-1975',
+            nationality: 'Australian',
+            club: 'Leeds United',
+            season: 2002,
+            league: 'epl',
+            img: '',
+            appearances:33 ,
+            goals: 20,
+            // gpa:
+            },
+            {
+                firstname: 'Michael',
+                surname: 'Owen',
+                dob: '14-12-1979',
+                nationality: 'English',
+                club: 'Liverpool',
+                season: 2002,
+                league: 'epl',
+                img: '',
+                appearances:35 ,
+                goals: 19,
+                // gpa:
+                },
+                {
+                    firstname: 'Alan',
+                    surname: 'Shearer',
+                    dob: '13-08-1970',
+                    nationality: 'English',
+                    club: 'Newcastle United',
+                    season: 2002,
+                    league: 'epl',
+                    img: '',
+                    appearances: 35,
+                    goals: 17,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Gianfranco',
+                        surname: 'Zola',
+                        dob: '05-07-1966',
+                        nationality: 'English',
+                        club: 'Chelsea',
+                        season: 2002,
+                        league: 'epl',
+                        img: '',
+                        appearances: 38,
+                        goals: 14,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Harry',
+                            surname: 'Kewell',
+                            dob: '22-09-1978',
+                            nationality: 'Australian',
+                            club: 'Leeds United',
+                            season: 2002,
+                            league: 'epl',
+                            img: '',
+                            appearances: 31,
+                            goals: 14,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Nicolas',
+                                surname: 'Anelka',
+                                dob: '14-03-1979',
+                                nationality: 'French',
+                                club: 'Manchester City',
+                                season: 2002,
+                                league: 'epl',
+                                img: '',
+                                appearances:38,
+                                goals: 14,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'Paul',
+                                    surname: 'Scholes',
+                                    dob: '16-11-1974',
+                                    nationality: 'English',
+                                    club: 'Manchester United',
+                                    season: 2002,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances:33,
+                                    goals: 14,
+                                    // gpa:
+                                    },
+                                    {
+                                        firstname: 'Robbie',
+                                        surname: 'Keane',
+                                        dob: '08-07-1980',
+                                        nationality: 'Irish',
+                                        club: 'Leeds United and Tottenham Hotspurs',
+                                        season: 2002,
+                                        league: 'epl',
+                                        img: '',
+                                        appearances:32,
+                                        goals: 14,
+                                        // gpa:
+                                        },
+                                        {
+                                            firstname: 'Robert',
+                                            surname: 'Pires',
+                                            dob: '29-10-1973',
+                                            nationality: 'French',
+                                            club: 'Arsenal',
+                                            season: 2002,
+                                            league: 'epl',
+                                            img: '',
+                                            appearances:26,
+                                            goals: 14,
+                                            // gpa:
+                                            },
+
+//2003
+//epl
+
+{
+    firstname: 'Thierry',
+    surname: 'Henry',
+    dob: '17-08-1977',
+    nationality: 'French',
+    club: 'Arsenal',
+    season: 2003,
+    league: 'epl',
+    img: '',
+    appearances:37,
+    goals: 30,
+    // gpa:
+    },
+    {
+        firstname: 'Alan',
+        surname: 'Shearer',
+        dob: '13-08-1970',
+        nationality: 'English',
+        club: 'Newcastle United',
+        season: 2003,
+        league: 'epl',
+        img: '',
+        appearances: 37,
+        goals: 22,
+        // gpa:
+        },
+        {
+            firstname: 'Louis',
+            surname: 'Saha',
+            dob: '08-08-1978',
+            nationality: 'French',
+            club: 'Fulham and Manchester United',
+            season: 2003,
+            league: 'epl',
+            img: '',
+            appearances:33 ,
+            goals: 20,
+            // gpa:
+            },
+            {
+                firstname: 'Ruud',
+                surname: 'Van Nistelrooy',
+                dob: '01-07-1976',
+                nationality: 'Dutch',
+                club: 'Manchester United',
+                season: 2003,
+                league: 'epl',
+                img: '',
+                appearances:32 ,
+                goals: 20,
+                // gpa:
+                },
+                {
+                    firstname: 'Mikael',
+                    surname: 'Forsell',
+                    dob: '15-03-1981',
+                    nationality: 'Finnish',
+                    club: 'Birmingham City',
+                    season: 2003,
+                    league: 'epl',
+                    img: '',
+                    appearances:32 ,
+                    goals: 17,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Juan Pablo',
+                        surname: 'Angel',
+                        dob: '24-10-1975',
+                        nationality: 'Colombian',
+                        club: 'Aston Villa',
+                        season: 2003,
+                        league: 'epl',
+                        img: '',
+                        appearances:33 ,
+                        goals: 16,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Michael',
+                            surname: 'Owen',
+                            dob: '14-12-1979',
+                            nationality: 'English',
+                            club: 'Liverpool',
+                            season: 2003,
+                            league: 'epl',
+                            img: '',
+                            appearances:29 ,
+                            goals: 16,
+                            // gpa:
+                            },
+                            {
+                                firstname: 'Nicolas',
+                                surname: 'Anelka',
+                                dob: '14-03-1979',
+                                nationality: 'French',
+                                club: 'Manchester City',
+                                season: 2003,
+                                league: 'epl',
+                                img: '',
+                                appearances:32,
+                                goals: 16,
+                                // gpa:
+                                },
+                            {
+                                firstname: 'Yakubu',
+                                surname: 'Ayegbeni',
+                                dob: '22-11-1982',
+                                nationality: 'Nigerian',
+                                club: 'Portsmouth',
+                                season: 2003,
+                                league: 'epl',
+                                img: '',
+                                appearances:37,
+                                goals: 16,
+                                // gpa:
+                                },
+                                {
+                                    firstname: 'James',
+                                    surname: 'Beattie',
+                                    dob: '27-02-1978',
+                                    nationality: 'English',
+                                    club: 'Southampton',
+                                    season: 2003,
+                                    league: 'epl',
+                                    img: '',
+                                    appearances: 37,
+                                    goals: 14,
+                                    // gpa:
+                                    },
+                                    {
+                                        firstname: 'Robbie',
+                                        surname: 'Keane',
+                                        dob: '08-07-1980',
+                                        nationality: 'Irish',
+                                        club: 'Tottenham Hotspurs',
+                                        season: 2003,
+                                        league: 'epl',
+                                        img: '',
+                                        appearances:34,
+                                        goals: 14,
+                                        // gpa:
+                                        },
+                                        {
+                                            firstname: 'Robert',
+                                            surname: 'Pires',
+                                            dob: '29-10-1973',
+                                            nationality: 'French',
+                                            club: 'Arsenal',
+                                            season: 2003,
+                                            league: 'epl',
+                                            img: '',
+                                            appearances:36,
+                                            goals: 14,
+                                            // gpa:
+                                            },
+
+//2004
+//epl                                        
+
+                                
 
 
 

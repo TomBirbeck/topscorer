@@ -3191,7 +3191,139 @@ goals:16 ,
 //2013
 //epl
 
-    
+{
+    firstname: 'Luis',
+    surname: 'Suarez',
+    dob: '24-01-1987',
+    nationality: 'Uruguayan',
+    club: 'Liverpool',
+    season: 2013-14,
+    league: 'epl',
+    img: 'https://th.bing.com/th/id/OIP.gPPGKkKfE9JgbNK8DRDfSwHaJo?w=152&h=198&c=7&r=0&o=5&pid=1.7',
+    appearances: 33,
+    goals: 31,
+    // gpa:
+    },
+    {
+        firstname: 'Daniel',
+        surname: 'Sturridge',
+        dob: '01-09-1989',
+        nationality: 'English',
+        club: 'Liverpool',
+        season: 2013,
+        league: 'epl',
+        img: 'https://th.bing.com/th/id/OIP.H6WhcE7GYIZNGhd8PzEbjwHaJo?w=133&h=180&c=7&r=0&o=5&pid=1.7',
+        appearances: 29,
+        goals: 21,
+        // gpa:
+        },
+    {
+        firstname: 'Yaya',
+        surname: 'Toure',
+        dob: '13-05-1983',
+        nationality: 'Ivorian',
+        club: 'Manchester City',
+        season: 2013,
+        league: 'epl',
+        img: 'https://th.bing.com/th/id/OIP.gfyZynZ0YjB7snRap4WQXQHaMC?w=185&h=300&c=7&r=0&o=5&pid=1.7',
+        appearances: 35,
+        goals: 20,
+        // gpa:
+        },
+        {
+            firstname: 'Sergio',
+            surname: 'Aguero',
+            dob: '02-06-1988',
+            nationality: 'Argentinian',
+            club: 'Manchester City',
+            season: 2013,
+            league: 'epl',
+            img: 'https://th.bing.com/th/id/OIP.HigOsNIRimSB0M9FnIy5zQHaJv?w=125&h=180&c=7&r=0&o=5&pid=1.7',
+            appearances:23,
+            goals: 17,
+            // gpa:
+            },
+            {
+                firstname: 'Wayne',
+                surname: 'Rooney',
+                dob: '24-10-1985',
+                nationality: 'English',
+                club: 'Manchester United',
+                season: 2013,
+                league: 'epl',
+                img: 'https://th.bing.com/th/id/OIP.Dj2ZbCPTRpEP64z3aKCqHQHaJY?w=160&h=184&c=7&r=0&o=5&pid=1.7',
+                appearances:29,
+                goals: 17,
+                // gpa:
+                },
+                {
+                    firstname: 'Edin',
+                    surname: 'Dzeko',
+                    dob: '17-03-1986',
+                    nationality: 'Bosnian',
+                    club: 'Manchester City',
+                    season: 2013,
+                    league: 'epl',
+                    img: 'https://th.bing.com/th/id/OIP.VdeCv2GsHz5Uq9HCMnu15wHaKU?w=127&h=180&c=7&r=0&o=5&pid=1.7',
+                    appearances:31,
+                    goals: 16,
+                    // gpa:
+                    },
+                    {
+                        firstname: 'Olivier',
+                        surname: 'Giroud',
+                        dob: '30-09-1986',
+                        nationality: 'French',
+                        club: 'Arsenal',
+                        season: 2013,
+                        league: 'epl',
+                        img: 'https://th.bing.com/th/id/OIP.gqhfR3kwTRYAC2RrWmSUEgAAAA?w=123&h=185&c=7&r=0&o=5&pid=1.7',
+                        appearances:36,
+                        goals: 16,
+                        // gpa:
+                        },
+                    {
+                        firstname: 'Wilfried',
+                        surname: 'Bony',
+                        dob: '10-12-1988',
+                        nationality: 'Ivorian',
+                        club: 'Swansea City',
+                        season: 2013,
+                        league: 'epl',
+                        img: 'https://pbs.twimg.com/media/B7TUpk1CMAEtXOj.jpg:large',
+                        appearances:34,
+                        goals: 16,
+                        // gpa:
+                        },
+                    {
+                        firstname: 'Jay',
+                        surname: 'Rodriguez',
+                        dob: '29-01-1989',
+                        nationality: 'English',
+                        club: 'Southampton',
+                        season: 2013,
+                        league: 'epl',
+                        img: 'https://th.bing.com/th/id/OIP.BUWXS6nD2bHaKkkn2HYEqgHaLC?w=135&h=202&c=7&r=0&o=5&pid=1.7',
+                        appearances:33,
+                        goals: 15,
+                        // gpa:
+                        },
+                        {
+                            firstname: 'Romelu',
+                            surname: 'Lukaku',
+                            dob: '13-05-1993',
+                            nationality: 'Belgian',
+                            club: 'Chelsea and Everton (Loan)',
+                            season: 2013,
+                            league: 'epl',
+                            img: 'https://th.bing.com/th/id/OIP.QudVj1iDmey93woF3fhByQHaJ5?w=123&h=180&c=7&r=0&o=5&pid=1.7',
+                            appearances: 33,
+                            goals: 15,
+                            // gpa:
+                            },
+
+//2014
+//epl
                         
 
 

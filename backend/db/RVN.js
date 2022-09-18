@@ -1,29 +1,5 @@
-{
-    firstname: 'Emmanuel',
-    surname: 'Adebayor',
-    dob: '22-02-1984',
-    nationality: 'Togolgese',
-    club: 'Manchester City',
-    season: 2009,
-    league: 'epl',
-    img: '',
-    appearances:26,
-    goals: 14,
-    // gpa:
-    },
-    {
-        firstname: 'Emmanuel',
-        surname: 'Adebayor',
-        dob: '22-02-1984',
-        nationality: 'Togolgese',
-        club: 'Tottenham Hotspurs (Loan)',
-        season: 2011,
-        league: 'epl',
-        img: '',
-        appearances:33,
-        goals: 17,
-        // gpa:
-        },
+
+   
         {
             firstname: 'Emmanuel',
             surname: 'Adebayor',
@@ -32,7 +8,7 @@
             club: 'Tottenham Hotspurs',
             season: 2013,
             league: 'epl',
-            img: '',
+            img: 'https://th.bing.com/th/id/OIP.LkUA4tVWNF8CBz3wrM_wrAAAAA?w=155&h=196&c=7&r=0&o=5&pid=1.7',
             appearances:21,
             goals: 11,
             // gpa:

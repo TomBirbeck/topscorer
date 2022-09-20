@@ -10,6 +10,21 @@ import {
   getPlayers,
   getTopScorerByGoals,
 } from '../models/topscorer.js';
+import { expressjwt } from "express-jwt";
+import jwks from 'jwks-rsa';
+const jwt = expressjwt;
+
+export const jwtCheck = jwt({
+  secret: jwks.expressJwtSecret({
+      cache: true,
+      rateLimit: true,
+      jwksRequestsPerMinute: 5,
+      jwksUri: process.env.URI
+}),
+audience: process.env.AUDIENCE,
+issuer: process.env.ISSUER,
+algorithms: [process.env.ALGORITHMS],
+});
 
 router.get('/', async function (req, res, next) {
   if (req.query.league){
@@ -31,7 +46,7 @@ return res.json({success: true, payload: data});
   return res.json({ success: true, payload: data });}
 });
 
-router.patch('/id/:id', async function (req, res, next) {
+router.patch('/id/:id', jwtCheck, async function (req, res, next) {
   const id = Number(req.params.id);
   const update = req.body;
   const data = await updatePlayer(id, update);
@@ -45,13 +60,6 @@ router.get('/surname/:surname', async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
-// router.get('/league/:league', async function (req, res, next) {
-//   const league = String(req.params.league);
-//   console.log(league);
-//   const data = await getTopScorerByLeague(league);
-//   next();
-//   return res.json({ success: true, payload: data });
-// });
 router.get('/year/:year', async function (req, res, next) {
   const year = Number(req.params.year);
   const data = await getTopScorerByYear(year);
@@ -59,15 +67,7 @@ router.get('/year/:year', async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
-// router.get('/year/:year/:league', async function (req, res, next) {
-//   const year = Number(req.params.year);
-//   const league = String(req.params.league);
-//   const data = await getTopScorerByLeagueAndYear(year, league);
-//   next();
-//   return res.json({ success: true, payload: data });
-// });
-
-router.delete('/delete/:id', async function (req, res, next) {
+router.delete('/delete/:id', jwtCheck, async function (req, res, next) {
   const id = Number(req.params.id);
   console.log("route req", req)
   const data = await deletePlayer(id);

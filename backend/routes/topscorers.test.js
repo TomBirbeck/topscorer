@@ -3,6 +3,31 @@ import app from '../app';
 import { test, expect } from '@jest/globals';
 
 describe('route tests', () => {
+  test('get players', async () => {
+    await request(app).get('/topscorer', (req, res) => {
+      const expectedBody = {
+        success: true,
+        payload: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(Number),
+            firstname: expect.any(String),
+            surname: expect.any(String),
+            dob: expect.any(String),
+            club: expect.any(String),
+            img: expect.any(String),
+            season: expect.any(String),
+            league: expect.any(String),
+            appearances: expect.any(Number),
+            goals: expect.any(Number),
+            gpg: expect.any(Number),
+          }),
+        ]),
+      };
+      expect(res.statusCode).toBe(200);
+      expect(res.headers['content-type']).toMatch(/json/);
+      expect(res.body).toMatchObject(expectedBody);
+    });
+  });
   test('get player by year', async () => {
     await request(app).get('/topscorer/year/1993', (req, res) => {
       const expectedBody = {
@@ -28,7 +53,56 @@ describe('route tests', () => {
       expect(res.body).toMatchObject(expectedBody);
     });
   });
-
+  test('get players by league working', async () => {
+    await request(app).get('/?league=EPL', (req, res) => {
+      const expectedBody = {
+        success: true,
+        payload: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(Number),
+            firstname: expect.any(String),
+            surname: expect.any(String),
+            dob: expect.any(String),
+            club: expect.any(String),
+            img: expect.any(String),
+            season: expect.any(Number),
+            league: 'epl',
+            appearances: expect.any(Number),
+            goals: expect.any(Number),
+            gpg: expect.any(Number),
+          }),
+        ]),
+      };
+      expect(res.statusCode).toBe(200);
+      expect(res.headers['content-type']).toMatch(/json/);
+      expect(res.body).toMatchObject(expectedBody);
+    });
+  });
+  test('get players by goals working', async () => {
+    await request(app).get('/?goals=20', (req, res) => {
+      const expectedBody = {
+        success: true,
+        payload: expect.arrayContaining([
+          expect.objectContaining({
+            id: expect.any(Number),
+            firstname: expect.any(String),
+            surname: expect.any(String),
+            dob: expect.any(String),
+            club: expect.any(String),
+            img: expect.any(String),
+            season: expect.any(Number),
+            league: expect.any(String),
+            appearances: expect.any(Number),
+            goals: expect.any(Number > 20),
+            gpg: expect.any(Number),
+          }),
+        ]),
+      };
+      expect(res.statusCode).toBe(200);
+      expect(res.headers['content-type']).toMatch(/json/);
+      expect(res.body).toMatchObject(expectedBody);
+    });
+  });
   test('get top scorer by year and league working', async () => {
     await request(app).get('/topscorer/year/1992/Ligue 1', (req, res) => {
       const expectedBody = {
@@ -69,32 +143,6 @@ describe('route tests', () => {
             img: expect.any(String),
             season: expect.any(Number),
             league: expect.any(String),
-            appearances: expect.any(Number),
-            goals: expect.any(Number),
-            gpg: expect.any(Number),
-          }),
-        ]),
-      };
-      expect(res.statusCode).toBe(200);
-      expect(res.headers['content-type']).toMatch(/json/);
-      expect(res.body).toMatchObject(expectedBody);
-    });
-  });
-
-  test('get players by league working', async () => {
-    await request(app).get('/topscorer/league/EPL', (req, res) => {
-      const expectedBody = {
-        success: true,
-        payload: expect.arrayContaining([
-          expect.objectContaining({
-            id: expect.any(Number),
-            firstname: expect.any(String),
-            surname: expect.any(String),
-            dob: expect.any(String),
-            club: expect.any(String),
-            img: expect.any(String),
-            season: expect.any(Number),
-            league: 'epl',
             appearances: expect.any(Number),
             goals: expect.any(Number),
             gpg: expect.any(Number),

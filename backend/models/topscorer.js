@@ -1,7 +1,7 @@
 import pool from '../db/index.js';
 
 export async function getPlayers() {
-  const res = await pool.query('SELECT * FROM players;');
+  const res = await pool.query('SELECT * FROM topscorers;');
   return res.rows;
 }
 
@@ -21,14 +21,14 @@ export async function getTopScorerByYear(year) {
   return res.rows;
 }
 
-export async function getTopScorerByLeagueAndYear(year, league) {
-  const leagueName = league.toLowerCase()
-  const res = await pool.query(
-    'SELECT * FROM topscorers WHERE season = $1 AND league = $2;',
-    [year, leagueName]
-  );
-  return res.rows;
-}
+// export async function getTopScorerByLeagueAndYear(year, league) {
+//   const leagueName = league.toLowerCase()
+//   const res = await pool.query(
+//     'SELECT * FROM topscorers WHERE season = $1 AND league = $2;',
+//     [year, leagueName]
+//   );
+//   return res.rows;
+// }
 
 export async function getTopScorerByLeague(league) {
   const leagueName = league.toLowerCase();
@@ -37,6 +37,14 @@ export async function getTopScorerByLeague(league) {
   ]);
   return res.rows;
 }
+
+export async function getTopScorerByGoals(goals) {
+  const res = await pool.query('SELECT * FROM topscorers WHERE goals >= $1;', [
+    goals,
+  ]);
+  return res.rows;
+}
+
 
 export async function createNewPlayer(player) {
   const leagueName = player.league.toLowerCase()

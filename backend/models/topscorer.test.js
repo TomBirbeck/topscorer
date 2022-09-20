@@ -3,15 +3,42 @@
 import { test, expect } from '@jest/globals';
 import {
   getTopScorerByYear,
-  getTopScorerByLeagueAndYear,
+  // getTopScorerByLeagueAndYear,
   getTopScorerByName,
   getTopScorerByLeague,
   createNewPlayer,
   updatePlayer,
   deletePlayer,
+  getPlayers,
+  getTopScorerByGoals,
 } from './topscorer.js';
 
 describe('tesing player models', () => {
+  test('when getPlayers function is called, returns all players', () => {
+    const actual = getPlayers();
+    const expected = {
+      success: true,
+      payload: [
+        {
+          id: expect.any(Number),
+          firstname: expect.any(String),
+          surname: expect.any(String),
+          dob: expect.any(String),
+          nationality: expect.any(String),
+          club: expect.any(String),
+          img: expect.any(String),
+          season: expect.any(Number),
+          league: expect.any(String),
+          appearances: expect.any(Number),
+          goals: expect.any(Number),
+          gpa: expect.any(String),
+        },
+      ],
+    };
+    expect(actual).resolves.toStrictEqual(expected);
+
+  })
+
   test('when getTopScorerByYear function is called, returns all players from that season', () => {
     const actual = getTopScorerByYear(1993);
     const expected = {
@@ -116,7 +143,7 @@ describe('tesing player models', () => {
       league: 'EPL',
       appearances: 30,
       goals: 15,
-      gpa: 0.5,
+      // gpa: 0.5,
     };
     const actual = createNewPlayer(player);
     const expected = [
@@ -137,6 +164,31 @@ describe('tesing player models', () => {
     ];
     expect(actual).resolves.toStrictEqual(expected);
   });
+  test('when getPlayersByGoals function is called, returns all players with scores', () => {
+    const actual = getTopScorerByGoals(20);
+    const expected = {
+      success: true,
+      payload: [
+        {
+          id: expect.any(Number),
+          firstname: expect.any(String),
+          surname: expect.any(String),
+          dob: expect.any(String),
+          nationality: expect.any(String),
+          club: expect.any(String),
+          img: expect.any(String),
+          season: expect.any(Number),
+          league: expect.any(String),
+          appearances: expect.any(Number),
+          goals: 20,
+          gpa: expect.any(String),
+        },
+      ],
+    };
+    expect(actual).resolves.toStrictEqual(expected);
+
+  })
+
   test('when updatePlayer function is called with an id and value, the correct player is updated in the db', async () => {
     const id = 2;
     const update = { surname: 'Peters' };

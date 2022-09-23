@@ -76,7 +76,7 @@ router.delete('/delete/:id', jwtCheck, async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
-router.post('/create', async function (req, res, next) {
+router.post('/create', jwtCheck, async function (req, res, next) {
   const body = req.body;
   console.log("body", body);
   const data = await createNewPlayer(body);

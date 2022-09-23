@@ -9,6 +9,7 @@ import {
   deletePlayer,
   getPlayers,
   getTopScorerByGoals,
+  createNewPlayer,
 } from '../models/topscorer.js';
 import { expressjwt } from "express-jwt";
 import jwks from 'jwks-rsa';
@@ -75,4 +76,11 @@ router.delete('/delete/:id', jwtCheck, async function (req, res, next) {
   return res.json({ success: true, payload: data });
 });
 
+router.post('/create', async function (req, res, next) {
+  const body = req.body;
+  console.log("body", body);
+  const data = await createNewPlayer(body);
+  next();
+  return res.json({success: true, payload: data});
+})
 export default router;

@@ -9,26 +9,25 @@ import {
   deletePlayer,
   getPlayers,
   getTopScorerByGoals,
-  createNewPlayer,
 } from '../models/topscorer.js';
-import { expressjwt } from "express-jwt";
+import { expressjwt } from 'express-jwt';
 import jwks from 'jwks-rsa';
 const jwt = expressjwt;
 
 export const jwtCheck = jwt({
   secret: jwks.expressJwtSecret({
-      cache: true,
-      rateLimit: true,
-      jwksRequestsPerMinute: 5,
-      jwksUri: process.env.URI
-}),
-audience: process.env.AUDIENCE,
-issuer: process.env.ISSUER,
-algorithms: [process.env.ALGORITHMS],
+    cache: true,
+    rateLimit: true,
+    jwksRequestsPerMinute: 5,
+    jwksUri: process.env.URI,
+  }),
+  audience: process.env.AUDIENCE,
+  issuer: process.env.ISSUER,
+  algorithms: [process.env.ALGORITHMS],
 });
 
 router.get('/', async function (req, res, next) {
-  if (req.query.league){
+  if (req.query.league) {
     const league = String(req.query.league);
     // console.log(league);
     const data = await getTopScorerByLeague(league);
@@ -37,14 +36,15 @@ router.get('/', async function (req, res, next) {
   }
   if (req.query.goals) {
     const goals = Number(req.query.goals);
-// console.log(goals);
-const data = await getTopScorerByGoals(goals);
-next()
-return res.json({success: true, payload: data});
+    // console.log(goals);
+    const data = await getTopScorerByGoals(goals);
+    next();
+    return res.json({ success: true, payload: data });
   } else {
-  const data = await getPlayers();
-  next();
-  return res.json({ success: true, payload: data });}
+    const data = await getPlayers();
+    next();
+    return res.json({ success: true, payload: data });
+  }
 });
 
 router.patch('/id/:id', jwtCheck, async function (req, res, next) {
@@ -70,17 +70,10 @@ router.get('/year/:year', async function (req, res, next) {
 
 router.delete('/delete/:id', jwtCheck, async function (req, res, next) {
   const id = Number(req.params.id);
-  console.log("route req", req)
+  console.log('route req', req);
   const data = await deletePlayer(id);
   next();
   return res.json({ success: true, payload: data });
 });
 
-router.post('/create', jwtCheck, async function (req, res, next) {
-  const body = req.body;
-  console.log("body", body);
-  const data = await createNewPlayer(body);
-  next();
-  return res.json({success: true, payload: data});
-})
 export default router;

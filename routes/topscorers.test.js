@@ -250,41 +250,4 @@ describe('route tests', () => {
     expect(response.body).toStrictEqual(expectedBody);
 
   })
-  test('create player route working', async ()=> {
-    const response = await request(app).post("/topscorer/create").send({
-        firstname: 'Steve',
-        surname: 'Bishop',
-        dob: '13/09/1983',
-        nationality: 'English',
-        club: 'Chelsea',
-        img: 'www.google.com',
-        season: 1994,
-        league: 'epl',
-        appearances: 30,
-        goals: 15,
-      }
-    )
-    const expectedBody = {
-      success: true,
-      payload: expect.arrayContaining([
-        expect.objectContaining({
-         id: expect.any(Number),
-         firstname: 'Steve',
-        surname: 'Bishop',
-        dob: '13/09/1983',
-        nationality: 'English',
-        club: 'Chelsea',
-        img: 'www.google.com',
-        season: 1994,
-        league: 'epl',
-        appearances: 30,
-        goals: 15,
-      }),
-      ]),
-    };
-
-    expect(response.statusCode).toBe(200);
-    expect(response.headers['content-type']).toMatch(/json/);
-    expect(response.body).toStrictEqual(expectedBody);
-  });
 });

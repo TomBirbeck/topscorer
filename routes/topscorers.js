@@ -27,53 +27,86 @@ export const jwtCheck = jwt({
 });
 
 router.get('/', async function (req, res, next) {
-  if (req.query.league) {
-    const league = String(req.query.league);
-    // console.log(league);
-    const data = await getTopScorerByLeague(league);
-    next();
-    return res.json({ success: true, payload: data });
-  }
-  if (req.query.goals) {
-    const goals = Number(req.query.goals);
-    // console.log(goals);
-    const data = await getTopScorerByGoals(goals);
-    next();
-    return res.json({ success: true, payload: data });
-  } else {
-    const data = await getPlayers();
-    next();
-    return res.json({ success: true, payload: data });
+  try {
+    if (req.query.league) {
+      const league = String(req.query.league);
+      const data = await getTopScorerByLeague(league);
+      next();
+      return res.json({ success: true, payload: data });
+    }
+    if (req.query.goals) {
+      const goals = Number(req.query.goals);
+      const data = await getTopScorerByGoals(goals);
+      next();
+      return res.json({ success: true, payload: data });
+    } else {
+      const data = await getPlayers();
+      next();
+      return res.json({ success: true, payload: data });
+    }
+  } catch (error) {
+    res.status(404);
+    res.json({
+      success: false,
+      message: 'Could not find what you were looking for',
+    });
   }
 });
 
 router.patch('/id/:id', jwtCheck, async function (req, res, next) {
-  const id = Number(req.params.id);
-  const update = req.body;
-  const data = await updatePlayer(id, update);
-  next();
-  return res.json({ success: true, payload: data });
+  try {
+    const id = Number(req.params.id);
+    const update = req.body;
+    const data = await updatePlayer(id, update);
+    next();
+    return res.json({ success: true, payload: data });
+  } catch (error) {
+    res.status(404);
+    res.json({
+      success: false,
+      message: 'Could not find what you were looking for',
+    });
+  }
 });
+
 router.get('/surname/:surname', async function (req, res, next) {
-  const name = req.params.surname;
-  const data = await getTopScorerByName(name);
-  next();
-  return res.json({ success: true, payload: data });
+  try {
+    const name = req.params.surname;
+    const data = await getTopScorerByName(name);
+    next();
+    return res.json({ success: true, payload: data });
+  } catch (error) {}
 });
 
 router.get('/year/:year', async function (req, res, next) {
-  const year = Number(req.params.year);
-  const data = await getTopScorerByYear(year);
-  next();
-  return res.json({ success: true, payload: data });
+  try {
+    const year = Number(req.params.year);
+    const data = await getTopScorerByYear(year);
+    next();
+    return res.json({ success: true, payload: data });
+  } catch (error) {
+    res.status(404);
+    res.json({
+      success: false,
+      message: 'Could not find what you were looking for',
+    });
+  }
 });
 
 router.delete('/delete/:id', jwtCheck, async function (req, res, next) {
-  const id = Number(req.params.id);
-  console.log('route req', req);
-  const data = await deletePlayer(id);
-  next();
-  return res.json({ success: true, payload: data });
+  try {
+    const id = Number(req.params.id);
+    console.log('route req', req);
+    const data = await deletePlayer(id);
+    next();
+    return res.json({ success: true, payload: data });
+  } catch (error) {
+    res.status(404);
+    res.json({
+      success: false,
+      message: 'Could not find what you were looking for',
+    });
+  }
 });
 
 export default router;
